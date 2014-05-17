@@ -1,8 +1,5 @@
 package com.example.deal4u.controllers;
 
-import com.example.deal4u.R;
-import com.example.deal4u.Service.serviceControler;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,6 +9,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+
+import com.example.deal4u.R;
 
 public class LoginActivity extends Activity implements OnClickListener {
 	
@@ -28,15 +27,10 @@ public class LoginActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.login_screen);
 		
 		initUI();
-		handleRequest();
+		//handleRequest();
 	}
 
-	private void handleRequest() {
-		// TODO Auto-generated method stub
-		serviceControler serviceobj = new serviceControler(LoginActivity.this);
-		String[] serviceparameters = {};
-		serviceobj.startService("", serviceparameters);
-	}
+	
 
 	private void initUI() {
 		// TODO Auto-generated method stub

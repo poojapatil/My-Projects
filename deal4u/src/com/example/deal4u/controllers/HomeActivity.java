@@ -25,12 +25,24 @@ public class HomeActivity extends Activity implements OnClickListener {
 	private void initUI() {
 		// TODO Auto-generated method stub
 		
-		movieBtn = (Button) findViewById(R.id.home_movieBtnId);
-		foodBtn = (Button) findViewById(R.id.home_foodBtnId);
 		
-		movieBtn.setOnClickListener(this);
-		movieBtn.setOnClickListener(this);
 		
+	}
+	
+	public void foodDeals(View v){
+
+		Intent main_Intent = new Intent(HomeActivity.this,DealsActivity.class);
+		startActivity(main_Intent);
+		// animating switching of 2 activities with fadein fadeout animation
+		overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+		
+	}
+	
+	public void movieDeals(View v){
+		Intent main_Intent = new Intent(HomeActivity.this,DealsActivity.class);
+		startActivity(main_Intent);
+		// animating switching of 2 activities with fadein fadeout animation
+		overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 	}
 
 	@Override
@@ -39,18 +51,11 @@ public class HomeActivity extends Activity implements OnClickListener {
 		
 		if (v == movieBtn) {
 			
-			Intent main_Intent = new Intent(HomeActivity.this,DealsActivity.class);
-			startActivity(main_Intent);
-			// animating switching of 2 activities with fadein fadeout animation
-			overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+			
 			
 		}
 		if (v == foodBtn) {
 			
-			Intent main_Intent = new Intent(HomeActivity.this,DealsActivity.class);
-			startActivity(main_Intent);
-			// animating switching of 2 activities with fadein fadeout animation
-			overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 			
 		}
 		
