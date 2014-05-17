@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dealList_Image_LayID"
+        android:layout_margin="10dip"
+         >
+
+        <ImageView
+            android:id="@+id/dealList_ImageID"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dealList_ImageID"
+            android:background="@drawable/shape_bg"
+            android:paddingLeft="10dip"
+            android:layout_centerInParent="true"
+            android:paddingRight="10dip"
+            android:orientation="vertical"
+             >
+
+            <TextView
+                android:id="@+id/dealList_TitleTextID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            
+             <TextView
+                android:id="@+id/dealList_AddressTextID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+             
+              <TextView
+                android:id="@+id/dealList_ReviewTextID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    
+    
+
+</RelativeLayout>

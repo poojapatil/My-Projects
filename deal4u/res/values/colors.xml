@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grayColor">#E7E7E5</color>
+    <color name="DarkGrayColor">#BDBDBD</color>
+    <color name="black">#000000</color>
+    <color name="LightGrayColor">#4c566c</color>
+    <color name= "transperent">#00000000</color>
+    <color name= "dashboard_listtext">#1f404c</color>
+    <color name="white">#ffffff</color> 
+  	<color name= "blue">#576b95</color> 
+  	<color name= "blue_button">#104362</color> 
+  	<color name= "gray_button">#afb4b5</color> 
+
+</resources>
